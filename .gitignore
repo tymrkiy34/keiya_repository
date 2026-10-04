@@ -3,3 +3,4 @@ data.json.tmp
 uploads/
 node_modules/
 .env
+dist/
