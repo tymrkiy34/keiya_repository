@@ -1,0 +1,8 @@
+{
+  "name": "dental-info-share",
+  "version": "1.0.0",
+  "description": "歯科医院の情報共有アプリ",
+  "scripts": { "start": "node server.js" },
+  "license": "UNLICENSED",
+  "private": true
+}
