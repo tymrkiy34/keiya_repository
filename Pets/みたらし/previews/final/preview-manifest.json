@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "source": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\final\\spritesheet-extended.png",
+  "frames_root": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\final-frames",
+  "artifacts": [
+    "all-states.gif",
+    "all-states.mp4",
+    "idle-jump-idle.gif",
+    "look-loop.gif",
+    "motion-stills.png"
+  ]
+}

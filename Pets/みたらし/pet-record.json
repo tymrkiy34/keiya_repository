@@ -1,0 +1,12 @@
+{
+  "pet_id": "pet_6ad0d351a6d08191b623fc15149868f6",
+  "name": "みたらし",
+  "description": "大きな耳と白茶の模様がかわいい、のんびり作業を見守るフレンチブルドッグ。",
+  "is_custom": true,
+  "spritesheet": "final/spritesheet-extended.png",
+  "sha256": "5ceb67450e28ed924799d0dfc7ad8b496d3d831d9287fe0b0f40c35e35a6a8b6",
+  "generator": "built-in image_gen",
+  "storage": "Local project folder approved by user instead of ChatGPT Library",
+  "active_verified": true,
+  "list_verified": true
+}

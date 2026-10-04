@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "atlas": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\final\\spritesheet-extended.png",
+  "encoded_bytes": 1746883,
+  "sha256": "5ceb67450e28ed924799d0dfc7ad8b496d3d831d9287fe0b0f40c35e35a6a8b6",
+  "jump": {
+    "idle_baseline": 202,
+    "jump_baselines": [
+      202,
+      189,
+      153,
+      191,
+      202
+    ],
+    "airborne_lift_pixels": 49,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 96.0,
+    "look_centers_x": [
+      95.0,
+      95.0,
+      95.5,
+      94.5,
+      94.5,
+      94.5,
+      95.5,
+      98.5,
+      95.5,
+      95.0,
+      93.5,
+      92.5,
+      92.5,
+      93.0,
+      94.5,
+      94.5
+    ],
+    "look_widths": [
+      76,
+      76,
+      77,
+      75,
+      75,
+      75,
+      75,
+      81,
+      77,
+      76,
+      77,
+      79,
+      79,
+      78,
+      75,
+      75
+    ],
+    "maximum_center_drift_pixels": 3.5,
+    "maximum_width_ratio": 1.08
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 045 accepted with a reviewed warning",
+    "look direction 157.5 accepted with a reviewed warning",
+    "look direction 225 accepted with a reviewed warning",
+    "look direction 337.5 accepted with a reviewed warning",
+    "157.5->180 diff is a local outlier (1912 pixels vs neighbor average 1142)"
+  ]
+}

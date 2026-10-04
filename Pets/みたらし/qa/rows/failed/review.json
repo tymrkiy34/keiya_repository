@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames",
+  "states": [
+    "failed"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14806,
+          "bbox": [
+            41,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 87
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13730,
+          "bbox": [
+            42,
+            14,
+            148,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 92
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13275,
+          "bbox": [
+            42,
+            24,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 88
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12751,
+          "bbox": [
+            42,
+            32,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 74
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11051,
+          "bbox": [
+            38,
+            67,
+            153,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 59
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12847,
+          "bbox": [
+            38,
+            33,
+            153,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 82
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13510,
+          "bbox": [
+            42,
+            18,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 82
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\failed\\frames\\failed\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14446,
+          "bbox": [
+            42,
+            7,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 83
+        }
+      ]
+    }
+  ]
+}

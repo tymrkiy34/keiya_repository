@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames",
+  "states": [
+    "running-left"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11233,
+          "bbox": [
+            5,
+            33,
+            186,
+            171
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 206
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11068,
+          "bbox": [
+            14,
+            33,
+            177,
+            173
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 211
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10328,
+          "bbox": [
+            21,
+            35,
+            171,
+            172
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 229
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10744,
+          "bbox": [
+            5,
+            35,
+            187,
+            172
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 178
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9686,
+          "bbox": [
+            23,
+            36,
+            169,
+            174
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 185
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10337,
+          "bbox": [
+            25,
+            37,
+            167,
+            172
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 177
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10685,
+          "bbox": [
+            19,
+            35,
+            172,
+            172
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 202
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\running-left\\frames\\running-left\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10278,
+          "bbox": [
+            12,
+            33,
+            180,
+            168
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 190
+        }
+      ]
+    }
+  ]
+}

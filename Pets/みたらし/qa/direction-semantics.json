@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "directions": [
+    {"label":"000","expected":"up","observed":"up","verdict":"pass","evidence":"Muzzle and nose raised centrally, underside of chin exposed and both irises aimed upward; paws stay planted."},
+    {"label":"022.5","expected":"up-right","observed":"up-right","verdict":"pass","evidence":"Raised nose and chin indicate up; muzzle center shifts to viewer right with irises following toward upper right."},
+    {"label":"045","expected":"up-right","observed":"up-right","verdict":"warning","evidence":"Nose tip is right of skull center with elevated muzzle and upper-directed irises. Similar to previous pose, but stays in upper-right quadrant without reversing the body."},
+    {"label":"067.5","expected":"up-right","observed":"up-right","verdict":"pass","evidence":"Head yaws farther toward right, nose points to right edge while muzzle remains elevated and iris sits high."},
+    {"label":"090","expected":"right","observed":"right","verdict":"pass","evidence":"Rightward profile places nose at far right of head, eye and muzzle direct horizontally to viewer right. Torso remains frontal."},
+    {"label":"112.5","expected":"down-right","observed":"down-right","verdict":"pass","evidence":"Right-directed muzzle remains beyond head center while nose and chin lower, eye gaze tracks toward lower right."},
+    {"label":"135","expected":"down-right","observed":"down-right","verdict":"pass","evidence":"More forehead is visible, muzzle dips with nose below eye plane; nose and pupils still on viewer-right side."},
+    {"label":"157.5","expected":"down-right","observed":"down-right","verdict":"warning","evidence":"Head bends markedly down with lowered nose and eyes; rightward muzzle and ear occlusion still indicate right. Transition to frontal down changes facial silhouette more than neighbors, but planted body baseline and scale remain stable at normal size."},
+    {"label":"180","expected":"down","observed":"down","verdict":"pass","evidence":"Head pitches centrally down, forehead prominent, nose lowered toward paws and eyes aimed at floor; no lateral aiming."},
+    {"label":"202.5","expected":"down-left","observed":"down-left","verdict":"pass","evidence":"Lowered muzzle and forehead view show down; nose moves left of head center, visible eye tracks lower left."},
+    {"label":"225","expected":"down-left","observed":"down-left","verdict":"warning","evidence":"Nose remains lowered and left of skull center; head is close to prior pose but farther left, preserving lower-left meaning."},
+    {"label":"247.5","expected":"down-left","observed":"down-left","verdict":"pass","evidence":"Muzzle protrudes screen-left with chin and iris still lowered, head yaw increases while paws remain aligned."},
+    {"label":"270","expected":"left","observed":"left","verdict":"pass","evidence":"Leftward profile has nose at leftmost head edge with pupil and muzzle directed left near horizontal; face remains readable."},
+    {"label":"292.5","expected":"up-left","observed":"up-left","verdict":"pass","evidence":"Nose points left of head center and lifts above resting muzzle line; iris and raised chin aim upper left."},
+    {"label":"315","expected":"up-left","observed":"up-left","verdict":"pass","evidence":"Muzzle is lifted, underside of chin appears and upper-directed iris follows nose toward viewer left."},
+    {"label":"337.5","expected":"up-left","observed":"up-left","verdict":"warning","evidence":"Raised nose and chin maintain clear up; muzzle and iris retain a leftward component. Similar to prior upper-left pose; closing into central up keeps lower body fixed with no visible scale pop."}
+  ],
+  "continuity_review":"All sixteen faces and attached ears stay readable and body remains planted. Local pixel-difference warning at 157.5 to 180 reflects profile-to-frontal head change; normal-size pair review shows 3.35px center movement and 1.02 area ratio, with no whole-body jump, reversed quadrant, seam or transparent hole. Intermediate angular spacing is approximate."
+}

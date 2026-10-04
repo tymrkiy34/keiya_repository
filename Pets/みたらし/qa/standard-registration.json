@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "state": "failed",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "idle",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "jumping",
+      "shared_scale": 1.0,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": true
+    },
+    {
+      "state": "review",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "running",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "running-left",
+      "shared_scale": 1.0,
+      "source_baseline": 174,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "running-right",
+      "shared_scale": 1.0,
+      "source_baseline": 175,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "waiting",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    },
+    {
+      "state": "waving",
+      "shared_scale": 0.7070707070707071,
+      "source_baseline": 203,
+      "target_baseline": 203,
+      "preserved_jump": false
+    }
+  ],
+  "reason": "Shared row transforms match seated states to the jump landing height and align directional gait baseline, without per-pose resizing or artwork edits."
+}

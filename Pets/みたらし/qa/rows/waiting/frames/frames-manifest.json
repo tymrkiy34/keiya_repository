@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "waiting",
+      "frames": [
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\00.png",
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\01.png",
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\02.png",
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\03.png",
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\04.png",
+        "C:\\Users\\PC_User\\AI\u526f\u696d\\Pets\\\u307f\u305f\u3089\u3057\\qa\\rows\\waiting\\frames\\waiting\\05.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

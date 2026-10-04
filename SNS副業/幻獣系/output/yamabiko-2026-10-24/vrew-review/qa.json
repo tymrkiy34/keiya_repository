@@ -1,0 +1,146 @@
+{
+  "producer": "Vrew 4.8.1 UI export",
+  "project": "動画\\プロジェクト\\08.vrew",
+  "video": "動画\\書き出し\\08-yamabiko-vrew.mp4",
+  "duration_seconds": 40.81,
+  "clips": 21,
+  "images": 11,
+  "full_decode": true,
+  "script_matches_word_transcript_ignoring_quotes_and_whitespace": true,
+  "audio_stream": true,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "visual_review": "all_21_scenes_reviewed_before_final_font_change; final_longest_and_ending_captions_reviewed",
+  "listening_review": "not_performed",
+  "clip_details": [
+    {
+      "clip": 1,
+      "start": 0,
+      "duration": 1.92,
+      "caption": "山で返ってくる声"
+    },
+    {
+      "clip": 2,
+      "start": 1.92,
+      "duration": 1.97,
+      "caption": "昔は、ただの反響とは"
+    },
+    {
+      "clip": 3,
+      "start": 3.89,
+      "duration": 1.74,
+      "caption": "考えられていませんでした"
+    },
+    {
+      "clip": 4,
+      "start": 5.63,
+      "duration": 1.46,
+      "caption": "最後まで聞くと、"
+    },
+    {
+      "clip": 5,
+      "start": 7.09,
+      "duration": 2.78,
+      "caption": "「やまびこ」という言葉の印象が変わります"
+    },
+    {
+      "clip": 6,
+      "start": 9.87,
+      "duration": 1.9,
+      "caption": "山に向かって声を出すと、"
+    },
+    {
+      "clip": 7,
+      "start": 11.77,
+      "duration": 2.15,
+      "caption": "少し遅れて同じ声が聞こえる"
+    },
+    {
+      "clip": 8,
+      "start": 13.92,
+      "duration": 2.13,
+      "caption": "今なら、音が山肌などに"
+    },
+    {
+      "clip": 9,
+      "start": 16.05,
+      "duration": 2.29,
+      "caption": "反射する現象だと説明できます"
+    },
+    {
+      "clip": 10,
+      "start": 18.34,
+      "duration": 1.57,
+      "caption": "けれど昔の人々は、"
+    },
+    {
+      "clip": 11,
+      "start": 19.91,
+      "duration": 2.75,
+      "caption": "それを山の神からの返事と捉えました"
+    },
+    {
+      "clip": 12,
+      "start": 22.66,
+      "duration": 1.85,
+      "caption": "「山彦」という言葉には、"
+    },
+    {
+      "clip": 13,
+      "start": 24.51,
+      "duration": 1.82,
+      "caption": "山にいる神や霊という意味も"
+    },
+    {
+      "clip": 14,
+      "start": 26.33,
+      "duration": 1.13,
+      "caption": "あるのです"
+    },
+    {
+      "clip": 15,
+      "start": 27.46,
+      "duration": 1.33,
+      "caption": "見えない相手が、"
+    },
+    {
+      "clip": 16,
+      "start": 28.79,
+      "duration": 1.74,
+      "caption": "自分の声に応える"
+    },
+    {
+      "clip": 17,
+      "start": 30.53,
+      "duration": 1.35,
+      "caption": "そう考えると、"
+    },
+    {
+      "clip": 18,
+      "start": 31.88,
+      "duration": 2.59,
+      "caption": "いつもの山が少し不思議に感じられます"
+    },
+    {
+      "clip": 19,
+      "start": 34.47,
+      "duration": 2.9,
+      "caption": "あなたなら、その返事に何と答える？"
+    },
+    {
+      "clip": 20,
+      "start": 37.37,
+      "duration": 1.1,
+      "caption": "フォローして、"
+    },
+    {
+      "clip": 21,
+      "start": 38.47,
+      "duration": 2.33,
+      "caption": "身近な言葉に隠れた不思議をもっと"
+    }
+  ],
+  "subtitle_font_size": 140
+}

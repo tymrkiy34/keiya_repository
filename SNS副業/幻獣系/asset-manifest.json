@@ -1,0 +1,1136 @@
+﻿[
+    {
+        "path":  "automation\\narrate.py",
+        "bytes":  3255,
+        "modifiedUtc":  "2026-10-24T00:36:44.6497633Z",
+        "sha256":  "15A08640647EE61EB163CA7D759422252ED175DD239FB7CC12FB4CFE6175E922"
+    },
+    {
+        "path":  "automation\\render.py",
+        "bytes":  3993,
+        "modifiedUtc":  "2026-10-24T00:32:10.3238487Z",
+        "sha256":  "32AE01D6EE41CE45BF11992B4790D567729D1E0A2625D24F187BE1AD4953835D"
+    },
+    {
+        "path":  "automation\\validate.py",
+        "bytes":  3420,
+        "modifiedUtc":  "2026-10-24T01:02:10.3002250Z",
+        "sha256":  "2EA8AB7A51226BCBFC155F8069C7C5596BA91BD49035DCEB3B99B6CDA1F8EB6A"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__init__.py",
+        "bytes":  227,
+        "modifiedUtc":  "2026-10-24T00:29:55.3308800Z",
+        "sha256":  "41AFC231DFECA422C692F9A219B51778B7560C5C4DFFA097BF92F80872D1FD8A"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__pycache__\\__init__.cpython-312.pyc",
+        "bytes":  483,
+        "modifiedUtc":  "2026-10-24T00:29:55.7114623Z",
+        "sha256":  "716B62FD3BC61F9424B02C234F2908B2F328BB1AEB0F7D918795A11AC5F45256"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__pycache__\\_definitions.cpython-312.pyc",
+        "bytes":  2059,
+        "modifiedUtc":  "2026-10-24T00:29:55.7234625Z",
+        "sha256":  "7539C095D9F54C6A262C93913F06E33DA455C0BDDF6E2FFB1F131E04618457DD"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__pycache__\\_io.cpython-312.pyc",
+        "bytes":  27166,
+        "modifiedUtc":  "2026-10-24T00:29:55.7354611Z",
+        "sha256":  "DF37E423CB611B0905B2B7A4C93FEAE03CE92129C03BE541104DBB4C13ABE728"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__pycache__\\_parsing.cpython-312.pyc",
+        "bytes":  9336,
+        "modifiedUtc":  "2026-10-24T00:29:55.7474606Z",
+        "sha256":  "2CEC74F30AB9E39BA15E3B23254FA52BE794CB1EFA63B9AB3F2D701307AA189A"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\__pycache__\\_utils.cpython-312.pyc",
+        "bytes":  5402,
+        "modifiedUtc":  "2026-10-24T00:29:55.7564645Z",
+        "sha256":  "1D9938264E2CEEB019793006EF906A7ECD8ECCFE9C24A374B56C8F6E091BD7C4"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\_definitions.py",
+        "bytes":  2041,
+        "modifiedUtc":  "2026-10-24T00:29:55.3308800Z",
+        "sha256":  "5206F96CB45BC27C4E314D39C03E4D3B45DF17DEAFF3D6881E9F45702D169E32"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\_io.py",
+        "bytes":  27048,
+        "modifiedUtc":  "2026-10-24T00:29:55.3318803Z",
+        "sha256":  "1A006DD17E5C54FFC66A2B40B6DB5586E76E598E1CA15F301E3B70C86B43DFE9"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\_parsing.py",
+        "bytes":  6840,
+        "modifiedUtc":  "2026-10-24T00:29:55.3318803Z",
+        "sha256":  "514B583F26F3BFDBD0E2C28FC189514F268FFE4F64A0A5DF97ECC8E919B8429A"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\_utils.py",
+        "bytes":  3833,
+        "modifiedUtc":  "2026-10-24T00:29:55.3318803Z",
+        "sha256":  "7951789F2F733F78CF7DE608C25E957D5F53D6FDF84BAC944560BF462194345F"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\binaries\\__init__.py",
+        "bytes":  45,
+        "modifiedUtc":  "2026-10-24T00:29:55.3328810Z",
+        "sha256":  "CE39D166833A6D050160E237D07A73229E1C934EDB3B2E28C5707E6F0377356F"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\binaries\\__pycache__\\__init__.cpython-312.pyc",
+        "bytes":  199,
+        "modifiedUtc":  "2026-10-24T00:29:55.7654686Z",
+        "sha256":  "078D5748EDF3D119454B7E3C2DDE60EDC39FFEC4EEB6C075C7B9D716B5027F7F"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+        "bytes":  87638016,
+        "modifiedUtc":  "2026-10-24T00:29:55.7024613Z",
+        "sha256":  "2CE797A0F88D7F067180338FB227F7B1928EA727BD9A4D7A1D022F7C52AF71A3"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg\\binaries\\README.md",
+        "bytes":  45,
+        "modifiedUtc":  "2026-10-24T00:29:55.3328810Z",
+        "sha256":  "B0D36DFB1BA1EA5CA873A6F6DBCC2295B7A7944AEA875071D91A6AAD1870E77D"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\INSTALLER",
+        "bytes":  4,
+        "modifiedUtc":  "2026-10-24T00:29:55.7664674Z",
+        "sha256":  "CEEBAE7B8927A3227E5303CF5E0F1F7B34BB542AD7250AC03FBCDE36EC2F1508"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\LICENSE",
+        "bytes":  1317,
+        "modifiedUtc":  "2026-10-24T00:29:55.7034644Z",
+        "sha256":  "ECA73421D0C905A92E952A553D4D58919C5A507C2C2C76E3C0CF9BA408C299E4"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\METADATA",
+        "bytes":  1528,
+        "modifiedUtc":  "2026-10-24T00:29:55.7034644Z",
+        "sha256":  "C9697B379419A64049D99E2248C4CBA963E03B5CAD1DC65E10A887D1DA7651EE"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\RECORD",
+        "bytes":  1661,
+        "modifiedUtc":  "2026-10-24T00:29:55.7684688Z",
+        "sha256":  "DD017B4A6285ACB6F00ADE542AEC52646FE418A08FAE11261AA033F91E85A15B"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\REQUESTED",
+        "bytes":  0,
+        "modifiedUtc":  "2026-10-24T00:29:55.7674673Z",
+        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\top_level.txt",
+        "bytes":  15,
+        "modifiedUtc":  "2026-10-24T00:29:55.7044627Z",
+        "sha256":  "38341851861BB63F48D528C0484318EE1F10F2168BAE630D5114829F4144075F"
+    },
+    {
+        "path":  "automation\\vendor\\imageio_ffmpeg-0.6.0.dist-info\\WHEEL",
+        "bytes":  96,
+        "modifiedUtc":  "2026-10-24T00:29:55.7044627Z",
+        "sha256":  "6FAFBF711B1164D3388325C31053F775BB03D78AE7EB932A662AA6D9B551BA14"
+    },
+    {
+        "path":  "automation\\VREW_WORKFLOW.md",
+        "bytes":  6594,
+        "modifiedUtc":  "2026-10-24T05:19:03.3312465Z",
+        "sha256":  "6F723612F028574F54AEE2FB3435B4E0363E42DD02E47E5D556D1557D4E3228C"
+    },
+    {
+        "path":  "automation\\WORKFLOW.md",
+        "bytes":  6274,
+        "modifiedUtc":  "2026-10-24T01:45:58.1677866Z",
+        "sha256":  "F8A965492B59E0C47630675A8C5D243AEF877121EED54C337CFA62BAF63E1C1F"
+    },
+    {
+        "path":  "output\\verification\\audio.mp3",
+        "bytes":  84525,
+        "modifiedUtc":  "2026-10-24T00:32:42.4381007Z",
+        "sha256":  "AF3B8900DC71704FF3F2F68C0789E31894CECC13BA9F78463890A71DBD69DC68"
+    },
+    {
+        "path":  "output\\verification\\audio\\001.wav",
+        "bytes":  129068,
+        "modifiedUtc":  "2026-10-24T00:36:49.4705495Z",
+        "sha256":  "C842BBF6E2AE8F0944FA37EB529147215CE1AC037831A14D43824C01BDC96DD1"
+    },
+    {
+        "path":  "output\\verification\\credits.txt",
+        "bytes":  23,
+        "modifiedUtc":  "2026-10-24T00:36:49.4725513Z",
+        "sha256":  "9C910EBB74D2A80EE3589525A12C450047D8B38E6781439835064108B040A078"
+    },
+    {
+        "path":  "output\\verification\\final.mp4",
+        "bytes":  310257,
+        "modifiedUtc":  "2026-10-24T00:37:03.6499695Z",
+        "sha256":  "8ECC00C4C0B56F44D1D475864A72E05740E87BDC0DE744EC88FFE3D5ECD8BFAF"
+    },
+    {
+        "path":  "output\\verification\\image.png",
+        "bytes":  2748691,
+        "modifiedUtc":  "2026-10-24T00:32:42.4390996Z",
+        "sha256":  "144D8EA5C01A169ECC6D6F46B0610C4F6E4F0AE5D24A44404AA4AD15EAB2AF92"
+    },
+    {
+        "path":  "output\\verification\\preview.jpg",
+        "bytes":  333437,
+        "modifiedUtc":  "2026-10-24T00:37:02.9721125Z",
+        "sha256":  "58FF0D34D0E76FC9F47416A06D170779FC1295C7DD6E9265F106159BAF4A321E"
+    },
+    {
+        "path":  "output\\verification\\render\\000.mp4",
+        "bytes":  310195,
+        "modifiedUtc":  "2026-10-24T00:37:03.5049403Z",
+        "sha256":  "0A3EE3BAEB0E9A2F4FE6DD06BEACA900FB0A7C859AABB150E82D1223EEAE4F5D"
+    },
+    {
+        "path":  "output\\verification\\render\\000.png",
+        "bytes":  3101497,
+        "modifiedUtc":  "2026-10-24T00:37:02.9641121Z",
+        "sha256":  "D9D0C37BC507DD561F478292AD625058F28E45D3236271A2782BB3C602F7C3B0"
+    },
+    {
+        "path":  "output\\verification\\render\\000.wav",
+        "bytes":  129102,
+        "modifiedUtc":  "2026-10-24T00:37:03.0081198Z",
+        "sha256":  "C7073B9669EF08EA74009829475BB0F73DCEFCAA5374D48F4F5D0DA88D5972E2"
+    },
+    {
+        "path":  "output\\verification\\render\\concat.txt",
+        "bytes":  14,
+        "modifiedUtc":  "2026-10-24T00:37:03.5724502Z",
+        "sha256":  "B45FCA07E6428837602A151D73E8B06ECB8A6C532065430329E7A5CA2BC515FF"
+    },
+    {
+        "path":  "output\\verification\\render-result.json",
+        "bytes":  147,
+        "modifiedUtc":  "2026-10-24T00:37:03.6539712Z",
+        "sha256":  "F73381E7DE017BED4247F342E4630FBF28D8FE33E79132181734702378BC9447"
+    },
+    {
+        "path":  "output\\verification\\segments.json",
+        "bytes":  105,
+        "modifiedUtc":  "2026-10-24T00:36:49.4715491Z",
+        "sha256":  "2FE1C5A7CA3862C35BAF4F9A97F68FA0F65BA37086043AB8C76B728B3960C4C5"
+    },
+    {
+        "path":  "output\\verification\\subtitles.srt",
+        "bytes":  80,
+        "modifiedUtc":  "2026-10-24T00:37:03.6539712Z",
+        "sha256":  "800AD3ED066D405195DE171C707D094FEA77517EB98FC116B54D45E13FEE2679"
+    },
+    {
+        "path":  "output\\verification\\voice.json",
+        "bytes":  235,
+        "modifiedUtc":  "2026-10-24T00:36:49.4715491Z",
+        "sha256":  "5DB9E33B16931FF156A968846521ACD4929D5A67A3302BD9CD3304C394DA0CD2"
+    },
+    {
+        "path":  "output\\week01\\04-kyubi.png",
+        "bytes":  2868329,
+        "modifiedUtc":  "2026-10-20T14:32:27.8536325Z",
+        "sha256":  "28466E424037C2D5130B0612153FE1EB1085F8DC62CD7939B7547648E7EF6036"
+    },
+    {
+        "path":  "output\\week01\\05-baku.png",
+        "bytes":  2575634,
+        "modifiedUtc":  "2026-10-20T14:33:16.5019487Z",
+        "sha256":  "152A6B388E39A8B55184AA84245AE53B3305E75F680D82E8C4819C013ABDADAB"
+    },
+    {
+        "path":  "output\\week01\\06-kappa.png",
+        "bytes":  2748691,
+        "modifiedUtc":  "2026-10-20T14:33:46.5475718Z",
+        "sha256":  "144D8EA5C01A169ECC6D6F46B0610C4F6E4F0AE5D24A44404AA4AD15EAB2AF92"
+    },
+    {
+        "path":  "output\\week01\\07-nue.png",
+        "bytes":  2804994,
+        "modifiedUtc":  "2026-10-20T14:34:26.6886441Z",
+        "sha256":  "FBBFD42FABC2250F08DBA707327D9B5D89B1E0C575A08A6D677B6CB442C53346"
+    },
+    {
+        "path":  "output\\week01\\08-yamabiko.png",
+        "bytes":  2834197,
+        "modifiedUtc":  "2026-10-20T14:34:59.7559154Z",
+        "sha256":  "EF8439FF4B1CBB58DC7CF8AA754DE62D1887DC044DADB8C9544DEDD68E715A47"
+    },
+    {
+        "path":  "output\\week01\\09-tengu.png",
+        "bytes":  3425772,
+        "modifiedUtc":  "2026-10-20T14:35:33.0594793Z",
+        "sha256":  "A0B437004B202E65523F9A7343CC7F3C33321E6DE6BCE7DAC1BE84E2DC0756A1"
+    },
+    {
+        "path":  "output\\week01\\10-kirin.png",
+        "bytes":  2677619,
+        "modifiedUtc":  "2026-10-20T14:36:13.7055355Z",
+        "sha256":  "6375A71FF8DBD299F8C57F6105D65E5640FE79657A35F2D10642F0D7D36A8B1E"
+    },
+    {
+        "path":  "output\\week01\\prompts.txt",
+        "bytes":  2359,
+        "modifiedUtc":  "2026-10-20T14:35:38.4374657Z",
+        "sha256":  "5444352CE1790A7C4C742A1B70C6C234C07EC255C187644E39660EEEBF0D3C8B"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\001.wav",
+        "bytes":  74796,
+        "modifiedUtc":  "2026-10-24T00:59:59.6303604Z",
+        "sha256":  "42F45893520DC163E5F0E320995CA0963B711EAE94E5544D84D2398E0973E64A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\002.wav",
+        "bytes":  176684,
+        "modifiedUtc":  "2026-10-24T01:00:00.3568152Z",
+        "sha256":  "7AFB7803F80D4A715B06547AA24845219561388F460DED3BFF192E6A53E181BF"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\003.wav",
+        "bytes":  216620,
+        "modifiedUtc":  "2026-10-24T01:00:01.1875818Z",
+        "sha256":  "5CE212C36D401F644E5EDEE912B3FD0691D7070C8B44637FF1EC2440661A90A2"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\004.wav",
+        "bytes":  197676,
+        "modifiedUtc":  "2026-10-24T01:00:01.9621712Z",
+        "sha256":  "12D71890C076C3E3793FAE20C2C1B6190CD500841039E8A0DB6A0AEDF2354855"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\005.wav",
+        "bytes":  209452,
+        "modifiedUtc":  "2026-10-24T01:00:02.8080327Z",
+        "sha256":  "9EE8F8E40FC579D3939D86116A3A2163533C468F61CAE4E2F4BDEC4DC7FB1923"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\006.wav",
+        "bytes":  204332,
+        "modifiedUtc":  "2026-10-24T01:00:03.7043297Z",
+        "sha256":  "A824F841A32B724CF779A1844F2FD54C02288166A304EE250E477698B5FC727F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\007.wav",
+        "bytes":  231468,
+        "modifiedUtc":  "2026-10-24T01:00:04.8757623Z",
+        "sha256":  "ADBDEC60B828ACBBBACF28F77EFFDB31F63A57EFDB71215F4289B30F7AC52777"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\008.wav",
+        "bytes":  137260,
+        "modifiedUtc":  "2026-10-24T01:00:05.6779711Z",
+        "sha256":  "067629897C2D932B98DF1BF519F70B333AA04B341413AFA2069B9D3E8D774D21"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\009.wav",
+        "bytes":  192044,
+        "modifiedUtc":  "2026-10-24T01:00:06.6843899Z",
+        "sha256":  "CECCC81CA923C3C53E5F92323695D78B38110192D4886DFFAF5CF46F9AC8B54A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\010.wav",
+        "bytes":  136748,
+        "modifiedUtc":  "2026-10-24T01:00:07.4401578Z",
+        "sha256":  "0A9E4447627D115002F0FDF3DA5543767AB6C63DA401B4ED98E7583E6DCB6DF5"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\audio\\011.wav",
+        "bytes":  162348,
+        "modifiedUtc":  "2026-10-24T01:00:08.3002434Z",
+        "sha256":  "C51F3BBB34B2C673C2C23545CA02C4797C12F0BB5D333166AD414691CFE9F0C4"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\checklist.md",
+        "bytes":  1458,
+        "modifiedUtc":  "2026-10-24T01:45:58.1687839Z",
+        "sha256":  "5CF1B47F2CB59EE895F3EFC8E8093899E2B8EFD81D5C4267F798FCDC92CA570B"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\contact-sheet.jpg",
+        "bytes":  579740,
+        "modifiedUtc":  "2026-10-24T01:02:13.8746881Z",
+        "sha256":  "997F3B1985E8B0C5470E1CD3DEE1C5A3DD88A372CB73018F1D9E6B54EB89BC0E"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\credits.txt",
+        "bytes":  23,
+        "modifiedUtc":  "2026-10-24T01:00:08.3022440Z",
+        "sha256":  "9C910EBB74D2A80EE3589525A12C450047D8B38E6781439835064108B040A078"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\final.mp4",
+        "bytes":  3704568,
+        "modifiedUtc":  "2026-10-24T01:01:50.1145479Z",
+        "sha256":  "AF45EADB386026A40993F9B27717B0CBA09F716FE7920795008E6A549629160C"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\frame-0.jpg",
+        "bytes":  166779,
+        "modifiedUtc":  "2026-10-24T01:01:18.0047876Z",
+        "sha256":  "1AA872342A50E08D8AEBD08B47F07ADEB5C2B1BEE9BD4BDBDD3349F41DE7A0A2"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\frame-1.jpg",
+        "bytes":  161573,
+        "modifiedUtc":  "2026-10-24T01:01:18.1747499Z",
+        "sha256":  "95476F9949746252DDE84D1A762EA9B838D90A3D9F05B8A356CD4654B1197D7B"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\frame-2.jpg",
+        "bytes":  159383,
+        "modifiedUtc":  "2026-10-24T01:01:18.3316086Z",
+        "sha256":  "3B71DAA483C08668122BB4BA54A1C8168ED3113117C186A63D86992F422856C5"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\image.png",
+        "bytes":  2816687,
+        "modifiedUtc":  "2026-10-24T00:59:18.5554881Z",
+        "sha256":  "2FB6E6305FBC5E0FD7F63D28BE28092CA443169B390348DB0D3B4AC7A85531EC"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\metadata.md",
+        "bytes":  2585,
+        "modifiedUtc":  "2026-10-24T00:59:50.9839777Z",
+        "sha256":  "091E5B1392D7E443385FC8405E1880CEEBAE42A4C13182A0ED33E4FFC69506BD"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\package.json",
+        "bytes":  719,
+        "modifiedUtc":  "2026-10-24T01:45:58.1687839Z",
+        "sha256":  "4D14047D6199E9D24B305EDA58EC5A5C00A1350BDD94B732FA10FF628B83BDAD"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\preview.jpg",
+        "bytes":  331703,
+        "modifiedUtc":  "2026-10-24T01:01:38.2622796Z",
+        "sha256":  "F666AAB1168ECE1864EC7248D876D790D32D006A7FB65C4D4092F99BE7192B0D"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\prompt.txt",
+        "bytes":  1128,
+        "modifiedUtc":  "2026-10-24T01:00:44.1103109Z",
+        "sha256":  "2AA7BDADEAB06122E42054335422CB8A18A0F7B420CF272F68FED9E9612615CA"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa.json",
+        "bytes":  1342,
+        "modifiedUtc":  "2026-10-24T01:02:50.9091493Z",
+        "sha256":  "D66F600DFFEAEB621C8B9F9163483EFBEE3ABF392D6E402C723A089A9C624244"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\01.jpg",
+        "bytes":  166778,
+        "modifiedUtc":  "2026-10-24T01:02:12.1854351Z",
+        "sha256":  "65932236EAD3A4908E314BE17C750CECBE88DBE742343A6CADCEB58A40BD2164"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\02.jpg",
+        "bytes":  158712,
+        "modifiedUtc":  "2026-10-24T01:02:12.3673968Z",
+        "sha256":  "3C8AB0DEFBBB9D9EAE8C418DA71A2F63510EBBFC1E8EBD51D0C9DC8FCB33FAEE"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\03.jpg",
+        "bytes":  157500,
+        "modifiedUtc":  "2026-10-24T01:02:12.5325567Z",
+        "sha256":  "B436CEAD2C3C88364F4C6A049B71AD4DC358DFEAA4C9A0CDA63C87C3A38AF4E5"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\04.jpg",
+        "bytes":  154564,
+        "modifiedUtc":  "2026-10-24T01:02:12.6923048Z",
+        "sha256":  "72806027DEF323D219FEF6A7E86FFAEA831601CCD0447929DC38E181FF101914"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\05.jpg",
+        "bytes":  157287,
+        "modifiedUtc":  "2026-10-24T01:02:12.8549494Z",
+        "sha256":  "221AB054C63D94B1E3B068253D43C703CFC0D2EA2D8EA1B816C32D0F50FF5A89"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\06.jpg",
+        "bytes":  156621,
+        "modifiedUtc":  "2026-10-24T01:02:13.0168447Z",
+        "sha256":  "BAA06AFDB1A885B3D3DEA6B688F2AC883835225EB5B399D61D5B39256614963A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\07.jpg",
+        "bytes":  157959,
+        "modifiedUtc":  "2026-10-24T01:02:13.1843274Z",
+        "sha256":  "76D6A9B94306F8C624032555844122308CAEAE04E7E3F5B1262F26EFDA105FEA"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\08.jpg",
+        "bytes":  155685,
+        "modifiedUtc":  "2026-10-24T01:02:13.3395088Z",
+        "sha256":  "0F6AFEA912CE3ECA0DCEC7F86BA0E5EAFA2F52FD3DC6850CB4013750993211BE"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\09.jpg",
+        "bytes":  155356,
+        "modifiedUtc":  "2026-10-24T01:02:13.5083036Z",
+        "sha256":  "AF1D495DAC8FC1DC40C1299ADBFF64974E0D74C07A84D422A9FD8C22DBAF302C"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\10.jpg",
+        "bytes":  155811,
+        "modifiedUtc":  "2026-10-24T01:02:13.6674429Z",
+        "sha256":  "4EA94D168C591D143B7052936B3E401FDAA2DED1450938A85138D77DE59EF8A6"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\qa-frames\\11.jpg",
+        "bytes":  153774,
+        "modifiedUtc":  "2026-10-24T01:02:13.8268084Z",
+        "sha256":  "12C35B8E931177FF4BC29944728E1424A829946A35647695AF0CE7905001CCD3"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\000.mp4",
+        "bytes":  303909,
+        "modifiedUtc":  "2026-10-24T01:01:38.6902653Z",
+        "sha256":  "B80047CB9F00AC183EB1251A62E4C3A3EB34AA8105B503568EDEE0E8B9455CF8"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\000.png",
+        "bytes":  3225426,
+        "modifiedUtc":  "2026-10-24T01:01:38.2542509Z",
+        "sha256":  "DE69420BAEBAA83F8366F1B4AFEF5B733EE06F6E45C8A6ACD686904C75AC95B1"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\000.wav",
+        "bytes":  74830,
+        "modifiedUtc":  "2026-10-24T01:01:38.2973088Z",
+        "sha256":  "1D661194D893C9A2A5A4EEADF75E1C5E58E2C7C3FBFD5C757F3160B01C813A13"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\001.mp4",
+        "bytes":  341491,
+        "modifiedUtc":  "2026-10-24T01:01:39.6457458Z",
+        "sha256":  "4B3FE77613751066D7D63DFCE03F96DBC35BF9A97876523CE9996E885FF1CEE0"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\001.png",
+        "bytes":  3169298,
+        "modifiedUtc":  "2026-10-24T01:01:38.9419890Z",
+        "sha256":  "62783C5940C47FC6B0F7B79AA718E5989AA3D2DE4DC11BB7A3C74A8EFCD47FBC"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\001.wav",
+        "bytes":  176718,
+        "modifiedUtc":  "2026-10-24T01:01:38.9809987Z",
+        "sha256":  "C99F8CA228C07BC039EDE40FEEC96CE85E2F90BBE5799B41976820289C6B6F7C"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\002.mp4",
+        "bytes":  354270,
+        "modifiedUtc":  "2026-10-24T01:01:40.7341522Z",
+        "sha256":  "D7AFAECAB283A061607EEAFC3AD5553C1378873584CDD222C72C55DCF430F0E9"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\002.png",
+        "bytes":  3121294,
+        "modifiedUtc":  "2026-10-24T01:01:39.9017812Z",
+        "sha256":  "DA9A9D9266F3A91CC177B79F75296A20A2E80A1CC1F29DD8D97F33D9B8503C4A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\002.wav",
+        "bytes":  216654,
+        "modifiedUtc":  "2026-10-24T01:01:39.9380235Z",
+        "sha256":  "F1B556376C7373B975669667B758FC6402E20F1DC5BCDBE1658372AC1C3A8167"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\003.mp4",
+        "bytes":  342371,
+        "modifiedUtc":  "2026-10-24T01:01:41.7540364Z",
+        "sha256":  "138F41E010B85C9285316E1966A542D646ADDAA4264C66FC252E70CD298E064A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\003.png",
+        "bytes":  3116631,
+        "modifiedUtc":  "2026-10-24T01:01:41.0171306Z",
+        "sha256":  "78ED3598B6697E1A106ACFD944479630C8F87585B1B8344CE3BB372E1DA01F81"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\003.wav",
+        "bytes":  197710,
+        "modifiedUtc":  "2026-10-24T01:01:41.0556735Z",
+        "sha256":  "15F0A5857D97CAEFB601827E31CA622D8B1095285C0DF82325839938DD39AB65"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\004.mp4",
+        "bytes":  350114,
+        "modifiedUtc":  "2026-10-24T01:01:42.9717701Z",
+        "sha256":  "8E0BA188A7024CC159676B4109F18466CB43D20EC59DEA56D311C40BF8273E23"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\004.png",
+        "bytes":  3118887,
+        "modifiedUtc":  "2026-10-24T01:01:42.0325608Z",
+        "sha256":  "6FDC79BFB727CC447180496BF2ED8633D022C12D7198AC50138C053949963D20"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\004.wav",
+        "bytes":  209486,
+        "modifiedUtc":  "2026-10-24T01:01:42.0726252Z",
+        "sha256":  "18D3980BD503462DDC117FD7D5FFF2D1BAEC8110A78BC291AC93819114091DCB"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\005.mp4",
+        "bytes":  346686,
+        "modifiedUtc":  "2026-10-24T01:01:44.1925528Z",
+        "sha256":  "A963D12FB389CA249627B46E3C0F214A61B09F0BB6A9A397B3E5699A54BB33C5"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\005.png",
+        "bytes":  3120789,
+        "modifiedUtc":  "2026-10-24T01:01:43.2716676Z",
+        "sha256":  "C425175A90B18D044D483F4066082550480CDE09D1ABE82A751E1B237A4CD219"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\005.wav",
+        "bytes":  204366,
+        "modifiedUtc":  "2026-10-24T01:01:43.3107192Z",
+        "sha256":  "60CBD1D0A8265116F11CDDCDEE5DB85102359EFF8D53C8FBA416032F5A545D92"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\006.mp4",
+        "bytes":  358926,
+        "modifiedUtc":  "2026-10-24T01:01:45.4723062Z",
+        "sha256":  "38ED92C7FB678C663CA4669BDE8DE77E523BDF97CB60721045A1B4C636839D10"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\006.png",
+        "bytes":  3117769,
+        "modifiedUtc":  "2026-10-24T01:01:44.4994329Z",
+        "sha256":  "9396DEA743E4AB49A682F48D117DCF20E710A2BC07A07FA09307BA55D42E6350"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\006.wav",
+        "bytes":  231502,
+        "modifiedUtc":  "2026-10-24T01:01:44.5374999Z",
+        "sha256":  "CA81DB0DB20D3EC4820CEECB25ED842FF66723BA23531EDE132E74980FE5B509"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\007.mp4",
+        "bytes":  323446,
+        "modifiedUtc":  "2026-10-24T01:01:46.4828956Z",
+        "sha256":  "6D72A00D94805E0066EA618A43815D4C1D9D1138F99236439C1221097F65FB18"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\007.png",
+        "bytes":  3170692,
+        "modifiedUtc":  "2026-10-24T01:01:45.7816883Z",
+        "sha256":  "04596C2E462037D9AD31318E84F402FDFB08264D59EEE419EEBE38BDBE4CC75F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\007.wav",
+        "bytes":  137294,
+        "modifiedUtc":  "2026-10-24T01:01:45.8233030Z",
+        "sha256":  "513B21A53F3682ABFD82B2CDA41CB1C625FF9764DD337E920F9038CF865340A8"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\008.mp4",
+        "bytes":  341784,
+        "modifiedUtc":  "2026-10-24T01:01:47.6318974Z",
+        "sha256":  "D03649772215A20E909166CED1DDC210AD3C20624E6C60277BB9CF95943F70BD"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\008.png",
+        "bytes":  3125187,
+        "modifiedUtc":  "2026-10-24T01:01:46.7666273Z",
+        "sha256":  "1D68432F40AB44F3C45E8885B606757C5A6CDED818BEEC9D42BB040BD072546E"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\008.wav",
+        "bytes":  192078,
+        "modifiedUtc":  "2026-10-24T01:01:46.8026783Z",
+        "sha256":  "9A20E7165DAC36B140A44B4E8A07C33C4A289DC47861678A3793C5D26300EFAB"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\009.mp4",
+        "bytes":  323879,
+        "modifiedUtc":  "2026-10-24T01:01:48.6515825Z",
+        "sha256":  "A12CDC121AC7ACBE8D1B5EEDE57622AC21B8D64B77E24F3B6159E60A29504223"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\009.png",
+        "bytes":  3170312,
+        "modifiedUtc":  "2026-10-24T01:01:47.9326988Z",
+        "sha256":  "0D8602D3112D5977AFA99C1D23C1916695D545C0F7C1FBB41323A234ABA63D2F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\009.wav",
+        "bytes":  136782,
+        "modifiedUtc":  "2026-10-24T01:01:47.9713007Z",
+        "sha256":  "49A4D26E60CA5877EA135F6E1AE5CEDDF1EDED2CBC25D50812D2981B525CA71E"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\010.mp4",
+        "bytes":  330870,
+        "modifiedUtc":  "2026-10-24T01:01:49.7193718Z",
+        "sha256":  "5D943813632D17412BF31E4E87089CCB1E70B1691E6409756FFA36FC762D5CF9"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\010.png",
+        "bytes":  3115819,
+        "modifiedUtc":  "2026-10-24T01:01:48.9272404Z",
+        "sha256":  "3BE35C5944A049C3FAD00CB33A82F25850D1503E06B1F30EA167911431AFB82C"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\010.wav",
+        "bytes":  162382,
+        "modifiedUtc":  "2026-10-24T01:01:48.9633936Z",
+        "sha256":  "A409629BB88BAA826BFFBFEABF01168ADDF0887B68A1F1E06113D968B5F6D71E"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render\\concat.txt",
+        "bytes":  174,
+        "modifiedUtc":  "2026-10-24T01:01:49.7750359Z",
+        "sha256":  "D50A5C61FC200984501CBC71715CA0F3C5DF649D5B808377B87BACC909B5E6A1"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\render-result.json",
+        "bytes":  160,
+        "modifiedUtc":  "2026-10-24T01:01:50.1195572Z",
+        "sha256":  "3093583BFA0093AC56DF996CDE25694533E1122B2E13BA2E337651ADAFDD1E13"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\research.md",
+        "bytes":  1318,
+        "modifiedUtc":  "2026-10-24T01:00:59.7107316Z",
+        "sha256":  "66252B2B0BF6AD64C8D33D1F56E2C41B5D046EA72E1D05ED517A5805B3DD6E7C"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\revision2\\metadata.md",
+        "bytes":  2375,
+        "modifiedUtc":  "2026-10-24T04:11:58.9142010Z",
+        "sha256":  "06E37204E5E23634940610564EE2C24D5BBD882C67027C570828276013650AE7"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\revision2\\script.txt",
+        "bytes":  717,
+        "modifiedUtc":  "2026-10-24T04:10:28.5916865Z",
+        "sha256":  "8269FFD7D3B09FE9FB5BC620B2E4AAA81EEE83E3263F932DB8ED9D8F8636BFF6"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\revision2\\visual-prompt.txt",
+        "bytes":  989,
+        "modifiedUtc":  "2026-10-24T04:10:28.5926884Z",
+        "sha256":  "AA0A5F0E0E504576E44D8C92B892063C9EAAA392A82E149615E468406D5A28DD"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\script.txt",
+        "bytes":  776,
+        "modifiedUtc":  "2026-10-24T00:59:50.9839777Z",
+        "sha256":  "DE3136B81D183E8F2A11A4FDADBA6A011FC10AB7ECB5CAAFE1749DFA08126BED"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\segments.json",
+        "bytes":  2414,
+        "modifiedUtc":  "2026-10-24T01:01:37.5064634Z",
+        "sha256":  "1418C4FAE5F5437A5F6A54E8A9FB5E3F0C75A782B816B9EEA825724C45E93AD0"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\subtitles.srt",
+        "bytes":  1217,
+        "modifiedUtc":  "2026-10-24T01:01:50.1195572Z",
+        "sha256":  "5634C71A7A51E50E56C1DBA61FC44FFC317062251899F07FAB67B515D668DAFF"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\voice.json",
+        "bytes":  235,
+        "modifiedUtc":  "2026-10-24T01:00:08.3022440Z",
+        "sha256":  "5DB9E33B16931FF156A968846521ACD4929D5A67A3302BD9CD3304C394DA0CD2"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\01.jpg",
+        "bytes":  163043,
+        "modifiedUtc":  "2026-10-24T03:34:41.9824386Z",
+        "sha256":  "218DC9B893725D1610260B1FE6075BDFF36DD25729E0FE9FA6CBD7656BAC1D43"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\02.jpg",
+        "bytes":  198133,
+        "modifiedUtc":  "2026-10-24T03:34:42.1099966Z",
+        "sha256":  "1C55CDAA668E2D2D67825885E2D97D1B1DE1323EEC2C40B9661033FEA0BF5D30"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\03.jpg",
+        "bytes":  196457,
+        "modifiedUtc":  "2026-10-24T03:34:42.2363344Z",
+        "sha256":  "94077944F39FCB12B1196F941958AC696CC8470658BDB2CC6A6D5F922B5D6681"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\04.jpg",
+        "bytes":  181978,
+        "modifiedUtc":  "2026-10-24T03:34:42.3559101Z",
+        "sha256":  "ED5F297B1D6A84DEA5FEA21411A12DD6D536BC34BDC03554ECCCF44D305D19CC"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\05.jpg",
+        "bytes":  190864,
+        "modifiedUtc":  "2026-10-24T03:34:42.4849420Z",
+        "sha256":  "F7C3B075D13F7FBEAF4208DE6652E0E1CBB30DF97342E88F3D617ED5934F2BD4"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\06.jpg",
+        "bytes":  190989,
+        "modifiedUtc":  "2026-10-24T03:34:42.6044964Z",
+        "sha256":  "E95EE950D855D010F92B893F87315B2499D649B14BBDCDDD1E3F53375572E143"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\07.jpg",
+        "bytes":  184631,
+        "modifiedUtc":  "2026-10-24T03:34:42.7460544Z",
+        "sha256":  "6073743B9E46367F60C4BD0B79C3FCBA5913350E7E2E65517FFAC178531DF0A5"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\08.jpg",
+        "bytes":  189992,
+        "modifiedUtc":  "2026-10-24T03:34:42.8700913Z",
+        "sha256":  "CDD527EB8B92349E04D7ECCA6F4F8DE67BDD8D256FE44A0DF910F5C41BFE1A49"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\09.jpg",
+        "bytes":  185545,
+        "modifiedUtc":  "2026-10-24T03:34:42.9851307Z",
+        "sha256":  "3D011BFE30F1C30E2B6CFF2ED4678EC1EB1F826E0A50902164CC8D37BB2E4D68"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\10.jpg",
+        "bytes":  191377,
+        "modifiedUtc":  "2026-10-24T03:34:43.1102357Z",
+        "sha256":  "EB590839138FF3F763AE37CBA5DC73C1E0A8F2B0CD049F8A250940702D05DB32"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\11.jpg",
+        "bytes":  182512,
+        "modifiedUtc":  "2026-10-24T03:34:43.2372736Z",
+        "sha256":  "1D0843D63FB0A50A585E49B7CC431356B559DDD76B69672DFDB8C66E9C7139BE"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\12.jpg",
+        "bytes":  171316,
+        "modifiedUtc":  "2026-10-24T03:34:43.3548329Z",
+        "sha256":  "6891782A685C82E5C4D657007BA76C3E4832A6F8461E9D0A8BDC79F095B92D65"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\13.jpg",
+        "bytes":  185207,
+        "modifiedUtc":  "2026-10-24T03:34:43.4958863Z",
+        "sha256":  "0FDE3B4B11631869E340344397C8565461C7268A49BB820E084249EC752005DE"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\14.jpg",
+        "bytes":  176131,
+        "modifiedUtc":  "2026-10-24T03:34:43.6124479Z",
+        "sha256":  "73E748E54BB9CDA237F6F20594F981D46622294871E123070B3A2BBC7974147F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\15.jpg",
+        "bytes":  168364,
+        "modifiedUtc":  "2026-10-24T03:34:43.7358364Z",
+        "sha256":  "FBD967346268A7E5E6BAE2F9FC3F4060ABF916F444259B896C35A9236E3E2F9D"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\16.jpg",
+        "bytes":  170590,
+        "modifiedUtc":  "2026-10-24T03:34:43.8743947Z",
+        "sha256":  "2C1EE46E5141EB24E11684979B53EFC087A09B1BC685D468506E17262E5DBBE7"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\17.jpg",
+        "bytes":  181635,
+        "modifiedUtc":  "2026-10-24T03:34:44.0068674Z",
+        "sha256":  "0370AD25345335B9EE41C387B62A4A7C2ECF00F18D4D09B4214AF614BCDB6C4A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\18.jpg",
+        "bytes":  178875,
+        "modifiedUtc":  "2026-10-24T03:34:44.1753513Z",
+        "sha256":  "22BC547569F8E7394521B0BDE8F0D69A079CA6B37202EC28C16C655CE4BB3136"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\19.jpg",
+        "bytes":  172722,
+        "modifiedUtc":  "2026-10-24T03:34:44.3139333Z",
+        "sha256":  "1656A0DCF80DD54CEA7F9D3FA0BE9BBD41C1731E4F3769A1883348EF3EC7EC0D"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\20.jpg",
+        "bytes":  169341,
+        "modifiedUtc":  "2026-10-24T03:34:44.4359798Z",
+        "sha256":  "583C697CDE23749035751D51E1FEC34F8A0466E7CAB787C3931A545FCEA928CC"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\21.jpg",
+        "bytes":  167974,
+        "modifiedUtc":  "2026-10-24T03:34:44.5846816Z",
+        "sha256":  "CE414530B09FBFAF9D91F55E09ED37C5D7BAC35E64E10E901796CC80433D7F68"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\contact-1.jpg",
+        "bytes":  545927,
+        "modifiedUtc":  "2026-10-24T03:34:44.6282049Z",
+        "sha256":  "A3967CDF4520154FC7A592A10C94465FCBC0CA4D80DAE71D64C2D005E6DAEEB9"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\contact-2.jpg",
+        "bytes":  525549,
+        "modifiedUtc":  "2026-10-24T03:34:44.6342156Z",
+        "sha256":  "A5685E001CAEE14F342937530915D2D1B87AAD293648FD64BC96832519A43D83"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\contact-3.jpg",
+        "bytes":  193957,
+        "modifiedUtc":  "2026-10-24T03:34:44.6392113Z",
+        "sha256":  "C9BF38963ECD0EB3ED38352C8F977C87D6CCFE561452BA9B300739863EEF9ECE"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\final-18.jpg",
+        "bytes":  190890,
+        "modifiedUtc":  "2026-10-24T03:38:02.1728916Z",
+        "sha256":  "36DEC6A835F20F179DAE18A0B2933FE25A6BF5D4635A5127ACA6AE4D03FD1063"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\final-21.jpg",
+        "bytes":  180190,
+        "modifiedUtc":  "2026-10-24T03:38:02.3140076Z",
+        "sha256":  "0A75C1F0EABAFA43B7C4FC0A8BBCF52BD90F92ABC725B752A544A8AD84F61AF3"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\final-5.jpg",
+        "bytes":  188581,
+        "modifiedUtc":  "2026-10-24T03:38:02.0193274Z",
+        "sha256":  "B8CF294E26025C6561CB2C7D1B6988E55EE35FE7DE83217BA8D35DF2932C1D3F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\final-subtitle-check.jpg",
+        "bytes":  174583,
+        "modifiedUtc":  "2026-10-24T03:38:02.3511654Z",
+        "sha256":  "99A3A82512489288CEFB86C1F4394C904B32EBA1F5A6D8FF932A6476D47CB0CB"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\package.json",
+        "bytes":  425,
+        "modifiedUtc":  "2026-10-24T03:38:40.8543731Z",
+        "sha256":  "D075B449BA58FCC251D79DB8590EB0C2CD15616C20D3386A81BDC68B866E0D0A"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\qa.json",
+        "bytes":  3473,
+        "modifiedUtc":  "2026-10-24T03:38:40.8533724Z",
+        "sha256":  "CDDC0FFB31143586CAD20BAC058254D566A8F4ABB75FD18D5641EDB15866171F"
+    },
+    {
+        "path":  "output\\yamabiko-2026-10-24\\vrew-review\\README.md",
+        "bytes":  1189,
+        "modifiedUtc":  "2026-10-24T03:38:40.0464877Z",
+        "sha256":  "FBDC34463EBB84B14E80EA292BB952B7AABE0A8191C2F803387A36A338E68DD8"
+    },
+    {
+        "path":  "PROJECT.md",
+        "bytes":  6953,
+        "modifiedUtc":  "2026-10-24T05:19:12.5453321Z",
+        "sha256":  "6137E1EE6BC3A3928F8EB77B52D7EBA2F8F35C569F907F09D8F31DE016E59762"
+    },
+    {
+        "path":  "references\\approved-08\\contact.jpg",
+        "bytes":  326111,
+        "modifiedUtc":  "2026-10-24T05:18:23.3793562Z",
+        "sha256":  "C298FC82C1C76236FAA3EF645704B8D92EABEFE5D75C23C5E2E4FA6D3ED05942"
+    },
+    {
+        "path":  "references\\approved-08\\frame-01.jpg",
+        "bytes":  195409,
+        "modifiedUtc":  "2026-10-24T05:18:22.4077085Z",
+        "sha256":  "495008FDE02CD989272F6D204988E480E67C3784B5537F7BEF267E6F22C4E546"
+    },
+    {
+        "path":  "references\\approved-08\\frame-02.jpg",
+        "bytes":  180181,
+        "modifiedUtc":  "2026-10-24T05:18:22.5247294Z",
+        "sha256":  "BBE72AE2CA65AAA28516A89F5449A58E519D8B5D33955FB662F938811748F977"
+    },
+    {
+        "path":  "references\\approved-08\\frame-03.jpg",
+        "bytes":  190534,
+        "modifiedUtc":  "2026-10-24T05:18:22.6297364Z",
+        "sha256":  "AFEB467BC7725A49CFBE3BA51CFB65A3471E51346FA2FFB9ED39A53AE09CCF82"
+    },
+    {
+        "path":  "references\\approved-08\\frame-04.jpg",
+        "bytes":  185271,
+        "modifiedUtc":  "2026-10-24T05:18:22.7417507Z",
+        "sha256":  "7AB8A887CC0A198F710B10677FB8B8C6B05BC91AA199A38756686A2B11176139"
+    },
+    {
+        "path":  "references\\approved-08\\frame-05.jpg",
+        "bytes":  169927,
+        "modifiedUtc":  "2026-10-24T05:18:22.8537650Z",
+        "sha256":  "D2621DFEAFF8885998C3BAC7CDB28679C31C4476E1552DC5F11B665E7916B52B"
+    },
+    {
+        "path":  "references\\approved-08\\frame-06.jpg",
+        "bytes":  191368,
+        "modifiedUtc":  "2026-10-24T05:18:22.9822774Z",
+        "sha256":  "E32C83E83BDEC59FB84CE6358AFE7506F8F00D68EAF710D2385A4D5C11FD4B05"
+    },
+    {
+        "path":  "references\\approved-08\\frame-07.jpg",
+        "bytes":  144259,
+        "modifiedUtc":  "2026-10-24T05:18:23.0942948Z",
+        "sha256":  "5E96FDAF63B03E04D48077AC8635487711C1F5BC4703AB9E5B62DC35752254E7"
+    },
+    {
+        "path":  "references\\approved-08\\frame-08.jpg",
+        "bytes":  155851,
+        "modifiedUtc":  "2026-10-24T05:18:23.2113432Z",
+        "sha256":  "23F9FF77B1B223B75B4DD9C7AD08D3D23990144582B089B95F13DB4F25AB4B15"
+    },
+    {
+        "path":  "references\\approved-08\\frame-09.jpg",
+        "bytes":  181735,
+        "modifiedUtc":  "2026-10-24T05:18:23.3413577Z",
+        "sha256":  "F4E87FFE61855A8AD9BE80C7F916F9C38F211052570DE6B159A1AD3605B21A25"
+    },
+    {
+        "path":  "references\\approved-08\\README.md",
+        "bytes":  1839,
+        "modifiedUtc":  "2026-10-24T05:19:03.3217432Z",
+        "sha256":  "811D83E24A365F1B988D7B61D51B2BFB91541FF43F647D72C54B5D9B79CC7741"
+    },
+    {
+        "path":  "references\\approved-08\\settings.json",
+        "bytes":  2128,
+        "modifiedUtc":  "2026-10-24T05:18:21.4241583Z",
+        "sha256":  "ACE913F80120F8D449C4F7FD8DBF1A9A0728FF86DCFA6C5E8EA797C3ACF0A335"
+    },
+    {
+        "path":  "scripts\\save-project.ps1",
+        "bytes":  2079,
+        "modifiedUtc":  "2026-10-24T00:37:50.1222461Z",
+        "sha256":  "A6412C80DFFF793FC85A598414D72F20514190604127AC804CFD15B73D265BB6"
+    },
+    {
+        "path":  "video06_contact.jpg",
+        "bytes":  434299,
+        "modifiedUtc":  "2026-10-23T14:13:55.5027606Z",
+        "sha256":  "4BE8496F0834B9452E0A92FC8D241557FF91C190B93186C8CE8089DAD74A4E48"
+    },
+    {
+        "path":  "アイコン\\unicorn-stained-glass-20261006.png",
+        "bytes":  3317870,
+        "modifiedUtc":  "2026-10-06T13:19:42.4546028Z",
+        "sha256":  "4B0E9A6B8F3C9EF074C25A36C6C79FEEC645E25BCCDE00ED766F5ABF3251BEDC"
+    },
+    {
+        "path":  "動画\\プロジェクト\\01.vrew",
+        "bytes":  9677359,
+        "modifiedUtc":  "2026-10-16T15:33:47.2172003Z",
+        "sha256":  "7E8857AEE7873F7F7CE2CF616E0C57D37B567D81C2AF98580CB61862EBC0C924"
+    },
+    {
+        "path":  "動画\\プロジェクト\\02.vrew",
+        "bytes":  9539724,
+        "modifiedUtc":  "2026-10-20T14:06:21.3550871Z",
+        "sha256":  "27CA6B983EC999241293A94DF0C7C4DE85D43B08500C26C129ED48DCA0653998"
+    },
+    {
+        "path":  "動画\\プロジェクト\\03.vrew",
+        "bytes":  11601327,
+        "modifiedUtc":  "2026-10-20T14:29:05.5814556Z",
+        "sha256":  "E1BBF36D74FE627CBF8C9A7FA94B53C01F4607AA0BBB9975120DB0A4FB163D39"
+    },
+    {
+        "path":  "動画\\プロジェクト\\04.vrew",
+        "bytes":  6411223,
+        "modifiedUtc":  "2026-10-20T14:51:18.9367854Z",
+        "sha256":  "F4F04BF460B25B9649397D6028673F384CA8F8F9C1896885FAE09579F1344580"
+    },
+    {
+        "path":  "動画\\プロジェクト\\05.vrew",
+        "bytes":  10520547,
+        "modifiedUtc":  "2026-10-21T13:16:46.6812496Z",
+        "sha256":  "91308CAE8DFC3A2B29A0DED8FC4F37889D5D55EC3B2D71954745FA206BC4705A"
+    },
+    {
+        "path":  "動画\\プロジェクト\\06.vrew",
+        "bytes":  9664130,
+        "modifiedUtc":  "2026-10-23T14:11:06.5458715Z",
+        "sha256":  "BCB141209B1EB338AB1B000EA92806E73BE439758E24A5A17AA4B2686903DE49"
+    },
+    {
+        "path":  "動画\\プロジェクト\\07.vrew",
+        "bytes":  12216437,
+        "modifiedUtc":  "2026-10-24T04:43:51.9836852Z",
+        "sha256":  "2496EF5C90D2925E25112953959E00EAAD1FACED2AFBBA8874D1A29BFCC38BE0"
+    },
+    {
+        "path":  "動画\\プロジェクト\\08.vrew",
+        "bytes":  10037947,
+        "modifiedUtc":  "2026-10-24T04:27:15.6633137Z",
+        "sha256":  "9DE14921EE59643BC5075BCE6714BECFCD76B42BD68ED7C1F40A0142EEA2437E"
+    },
+    {
+        "path":  "動画\\書き出し\\01.mp4",
+        "bytes":  18181821,
+        "modifiedUtc":  "2026-10-18T13:08:32.7223468Z",
+        "sha256":  "6D1D65D7F6F6DBAAD4CFFB499FECC20896B3CC453B9A60D67FC6402678412AD1"
+    },
+    {
+        "path":  "動画\\書き出し\\02.mp4",
+        "bytes":  31815922,
+        "modifiedUtc":  "2026-10-18T13:46:07.5288984Z",
+        "sha256":  "757C8F4CED101992215D82C021990979E7B0F908E4A780A75560C94A58B1D550"
+    },
+    {
+        "path":  "動画\\書き出し\\03.mp4",
+        "bytes":  39011842,
+        "modifiedUtc":  "2026-10-20T14:27:09.3854790Z",
+        "sha256":  "591B25833E8431F22243C28711D2B24F6F46633AD81F6E9D1AC902324C7E5458"
+    },
+    {
+        "path":  "動画\\書き出し\\04.mp4",
+        "bytes":  32709891,
+        "modifiedUtc":  "2026-10-20T14:50:54.2087813Z",
+        "sha256":  "1BAE20D85374570FAB2E329EB98C0BE91CFD9C1DD156E1678239E1B90DDE4CAA"
+    },
+    {
+        "path":  "動画\\書き出し\\05.mp4",
+        "bytes":  39649907,
+        "modifiedUtc":  "2026-10-20T15:03:38.0588797Z",
+        "sha256":  "E3E5B5D40B1F6E37519A0678F06116D45D4DD14AC6F5721276988D9E92089C63"
+    },
+    {
+        "path":  "動画\\書き出し\\06.mp4",
+        "bytes":  44082168,
+        "modifiedUtc":  "2026-10-23T14:10:49.2755952Z",
+        "sha256":  "3593ABF40021710540BE3AADA232A0F4D5BA128FDF08D54B737319EFA26679F2"
+    },
+    {
+        "path":  "動画\\書き出し\\07.mp4",
+        "bytes":  45611631,
+        "modifiedUtc":  "2026-10-24T04:33:58.2321463Z",
+        "sha256":  "74A428056203501F2560292161E0B4CC61C11F94DBF7CD1F3A1F259BB6AC8C83"
+    },
+    {
+        "path":  "動画\\書き出し\\08.mp4",
+        "bytes":  37729240,
+        "modifiedUtc":  "2026-10-24T04:27:10.7924123Z",
+        "sha256":  "68B5944FC437A7AE5C91A17321AE693D6BD63EE855697AD64444015CC23EA14F"
+    }
+]

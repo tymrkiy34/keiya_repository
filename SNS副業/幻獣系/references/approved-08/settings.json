@@ -1,0 +1,78 @@
+{
+  "video": "動画\\書き出し\\08.mp4",
+  "project": "動画\\プロジェクト\\08.vrew",
+  "sha256": "68b5944fc437a7ae5c91a17321ae693d6bd63ee855697ad64444015cc23ea14f",
+  "captions": [
+    "その声を返したのは誰",
+    "山で返ってくる声",
+    "昔はただの反響とは",
+    "考えられていませんでした",
+    "最後まで聞くと",
+    "やまびこの印象が変わります",
+    "山に向かって声を出すと",
+    "少し遅れて同じ声が聞こえる",
+    "今なら音が",
+    "山肌などに反射する現象だと",
+    "説明できますけれど",
+    "昔の人々はそれを",
+    "山の神からの",
+    "返事と捉えました",
+    "山彦という言葉には",
+    "山にいる神や霊という",
+    "意味もあるのです",
+    "見えない相手が",
+    "自分の声に応える",
+    "そう考えるといつもの山が",
+    "少し不思議に感じられます",
+    "あなたならその返事に",
+    "何と答える",
+    "フォローして",
+    "身近な言葉に隠れた\n不思議をもっと"
+  ],
+  "fonts": {
+    "('Otsutome font-Vrew_700', '210')": 25
+  },
+  "images": 12,
+  "voice": {
+    "pitch": 0,
+    "speed": 0,
+    "volume": 0,
+    "speaker": {
+      "provider": "voicevox",
+      "gender": "male",
+      "lang": "ja-JP",
+      "tags": [
+        "lecture",
+        "low_tone",
+        "careful"
+      ],
+      "badge": "Recommended",
+      "name": "vv7",
+      "speakerId": "vv7",
+      "age": "youth",
+      "emotions": [
+        "neutral",
+        "energetic",
+        "irritated",
+        "happy",
+        "tender",
+        "sad",
+        "whisper"
+      ],
+      "free": true
+    },
+    "emotion": "neutral"
+  },
+  "referenceImages": [
+    {
+      "version": 1,
+      "mediaId": "1bc4e110-e416-4c08-a8fe-4d17f89b4a7a",
+      "sourceOrigin": "USER",
+      "fileSize": 465243,
+      "name": "1bc4e110-e416-4c08-a8fe-4d17f89b4a7a.jpg",
+      "type": "Image",
+      "isTransparent": false,
+      "fileLocation": "IN_MEMORY"
+    }
+  ]
+}

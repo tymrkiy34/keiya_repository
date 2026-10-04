@@ -1,0 +1,14 @@
+{
+  "status": "vrew_completed_for_user_review",
+  "producer": "Vrew 4.8.1",
+  "project": "動画/プロジェクト/08.vrew",
+  "video": "動画/書き出し/08-yamabiko-vrew.mp4",
+  "duration_seconds": 40.81,
+  "image_count": 11,
+  "subtitle_clips": 21,
+  "voice": "青山龍星",
+  "bgm": "なんか凄まじい",
+  "metadata": "../metadata.md",
+  "qa": "qa.json",
+  "human_listening_review": "not_performed"
+}

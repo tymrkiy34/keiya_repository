@@ -1,0 +1,6 @@
+Warning: cpu_num_threads is set to 0. Setting it to half of the logical cores.
+INFO:     Started server process [6784]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:50021 (Press CTRL+C to quit)
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.

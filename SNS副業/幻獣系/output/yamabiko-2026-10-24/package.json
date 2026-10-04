@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "topic": "山彦",
+  "status": "rejected_requires_vrew_rebuild",
+  "duration_seconds": 40.5,
+  "video": "final.mp4",
+  "image": "image.png",
+  "script": "script.txt",
+  "subtitles": "subtitles.srt",
+  "metadata": "metadata.md",
+  "prompt": "prompt.txt",
+  "voice": "VOICEVOX:青山龍星 / ノーマル",
+  "completed": [
+    "user_script_preserved",
+    "new_image_generated",
+    "full_narration_generated",
+    "subtitled_mp4_rendered",
+    "titles_and_captions_prepared",
+    "decode_audio_subtitle_checks",
+    "all_subtitle_frames_visually_reviewed"
+  ],
+  "not_performed": [
+    "human_listening_review",
+    "SNS_upload",
+    "performance_analytics"
+  ]
+}
