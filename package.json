@@ -2,7 +2,9 @@
   "name": "dental-info-share",
   "version": "1.0.0",
   "description": "歯科医院の情報共有アプリ",
-  "scripts": { "start": "node server.js" },
+  "scripts": { "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test test/api.test.js" },
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "engines": { "node": ">=22.9" }
 }
