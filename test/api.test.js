@@ -194,3 +194,91 @@ test('他人の予定は一般スタッフが編集・削除できない', async
   assert.equal((await call('PUT', `/api/events/${ev.id}`, { cookie: staffLogin, body: { title: 'x', date: '2026-10-20', allDay: true } })).status, 403);
   assert.equal((await call('DELETE', `/api/events/${ev.id}`, { cookie: staffLogin })).status, 403);
 });
+
+test('技工物: 依頼→工程変更→再製作→履歴・添付・通知', async () => {
+  const login = (await call('POST', '/api/login', { body: { loginId: 'sato', password: 'newpassword789' } })).cookie;
+  const bad = await call('POST', '/api/lab', { cookie: login, body: { patientRef: '', type: 'クラウン', dueDate: '2026-10-20' } });
+  assert.equal(bad.status, 400);
+  assert.equal((await call('POST', '/api/lab', { cookie: login, body: { patientRef: 'No.1042', type: 'クラウン', requestDate: '2026-10-10', dueDate: '2026-10-05' } })).status, 400, '納期が依頼日より前');
+  const mailsBefore = mails.length;
+  const o = (await call('POST', '/api/lab', { cookie: login, body: { patientRef: 'No.1042', type: 'クラウン', teeth: '右上6', material: 'ジルコニア', shade: 'A2', doctor: '山田', requestDate: '2026-10-10', dueDate: '2026-10-20', urgent: true, notify: true } })).data;
+  assert.match(o.no, /^L-\d{4}$/);
+  assert.equal(o.status, '依頼');
+  assert.equal(o.history.length, 1);
+  await wait(400);
+  assert.equal(mails.length, mailsBefore + 1, '依頼時に通知');
+
+  assert.equal((await call('POST', `/api/lab/${o.id}/status`, { cookie: login, body: { status: '依頼' } })).status, 400, '同じ工程は不可');
+  assert.equal((await call('POST', `/api/lab/${o.id}/status`, { cookie: login, body: { status: '不明' } })).status, 400);
+  const s1 = await call('POST', `/api/lab/${o.id}/status`, { cookie: login, body: { status: '製作中', note: '築盛開始' } });
+  assert.equal(s1.data.status, '製作中');
+  const lineBefore = lineCalls.length;
+  const s2 = await call('POST', `/api/lab/${o.id}/status`, { cookie: login, body: { status: '完成', notify: true } });
+  assert.equal(s2.data.history.length, 3);
+  await wait(400);
+  assert.equal(lineCalls.length, lineBefore + 1);
+  assert.match(lineCalls.at(-1).body.messages[0].text, /技工物 完成/);
+  const re = await call('POST', `/api/lab/${o.id}/remake`, { cookie: login, body: { note: '色調違い' } });
+  assert.equal(re.data.status, '製作中');
+  assert.equal(re.data.remakeCount, 1);
+
+  // 技工物の添付は全スタッフ可（作成者以外の管理者でも）
+  const up = await call('POST', `/api/lab/${o.id}/files`, { cookie: admin, raw: Buffer.from('%PDF'), headers: { 'X-Filename': encodeURIComponent('指示書.pdf') } });
+  assert.equal(up.status, 201);
+  assert.equal((await call('GET', `/api/files/${up.data.id}`, { cookie: login })).status, 200);
+  const upd = await call('PUT', `/api/lab/${o.id}`, { cookie: admin, body: { patientRef: 'No.1042', type: 'ブリッジ', requestDate: '2026-10-10', dueDate: '2026-10-22' } });
+  assert.equal(upd.data.type, 'ブリッジ');
+  assert.equal(upd.data.status, '製作中', '編集で工程は変わらない');
+  const other = await call('POST', '/api/login', { body: { loginId: 'sato', password: 'newpassword789' } });
+  const o2 = (await call('POST', '/api/lab', { cookie: admin, body: { patientRef: 'AB', type: '総義歯', dueDate: '2026-11-01' } })).data;
+  assert.equal((await call('DELETE', `/api/lab/${o2.id}`, { cookie: other.cookie })).status, 403);
+  assert.equal((await call('DELETE', `/api/lab/${o2.id}`, { cookie: admin })).status, 200);
+});
+
+test('在庫: 登録・使用・入庫・棚卸・発注点通知・発注済み', async () => {
+  const login = (await call('POST', '/api/login', { body: { loginId: 'sato', password: 'newpassword789' } })).cookie;
+  assert.equal((await call('POST', '/api/inventory', { cookie: login, body: { name: '', location: '技工室' } })).status, 400);
+  assert.equal((await call('POST', '/api/inventory', { cookie: login, body: { name: 'x', location: '倉庫' } })).status, 400);
+  assert.equal((await call('POST', '/api/inventory', { cookie: login, body: { name: 'x', location: '技工室', qty: -1 } })).status, 400);
+  const it = (await call('POST', '/api/inventory', { cookie: login, body: { name: '超硬石膏', location: '技工室', category: '印象材・石膏', unit: '袋', qty: 3, reorderPoint: 2, target: 6, supplier: 'ABC商会', expiry: '2027-01-01' } })).data;
+  assert.equal(it.qty, 3);
+
+  const lineBefore = lineCalls.length;
+  assert.equal((await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'use', amount: 5 } })).status, 400, '在庫超過の使用は不可');
+  assert.equal((await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'use', amount: 0 } })).status, 400);
+  const u1 = (await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'use', amount: 1, note: 'クラウン製作' } })).data;
+  assert.equal(u1.qty, 2);
+  await wait(400);
+  assert.equal(lineCalls.length, lineBefore + 1, '発注点に達したので通知');
+  assert.match(lineCalls.at(-1).body.messages[0].text, /在庫少.*超硬石膏/);
+  await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'use', amount: 1 } });
+  await wait(300);
+  assert.equal(lineCalls.length, lineBefore + 1, '補充前の再通知はしない');
+
+  const ord = (await call('POST', `/api/inventory/${it.id}/ordered`, { cookie: login, body: { ordered: true } })).data;
+  assert.match(ord.orderedAt, /^\d{4}-\d{2}-\d{2}$/);
+  const rec = (await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'in', amount: 6 } })).data;
+  assert.equal(rec.qty, 7);
+  assert.equal(rec.orderedAt, '', '入庫で発注済みが解除される');
+  const set = (await call('POST', `/api/inventory/${it.id}/adjust`, { cookie: login, body: { type: 'set', amount: 4, note: '棚卸' } })).data;
+  assert.equal(set.qty, 4);
+
+  const list = (await call('GET', '/api/inventory', { cookie: login })).data;
+  assert.equal(list.items.length, 1);
+  const logs = list.logs.filter((l) => l.itemId === it.id);
+  assert.deepEqual(logs.map((l) => l.type).reverse(), ['new', 'use', 'use', 'in', 'set']);
+  assert.equal(logs.find((l) => l.type === 'set').delta, -3);
+
+  await call('POST', '/api/inventory/bulk-ordered', { cookie: login, body: { ids: [it.id] } });
+  assert.notEqual((await call('GET', '/api/inventory', { cookie: login })).data.items[0].orderedAt, '');
+  assert.equal((await call('DELETE', `/api/inventory/${it.id}`, { cookie: login })).status, 403, '削除は管理者のみ');
+  assert.equal((await call('DELETE', `/api/inventory/${it.id}`, { cookie: admin })).status, 200);
+});
+
+test('職種を設定できる', async () => {
+  const users = (await call('GET', '/api/users', { cookie: admin })).data;
+  const sato = users.find((u) => u.loginId === 'sato');
+  const r = await call('PATCH', `/api/users/${sato.id}`, { cookie: admin, body: { jobTitle: '歯科技工士' } });
+  assert.equal(r.data.jobTitle, '歯科技工士');
+  assert.equal((await call('PATCH', `/api/users/${sato.id}`, { cookie: admin, body: { jobTitle: 'ふつう' } })).data.jobTitle, '');
+});

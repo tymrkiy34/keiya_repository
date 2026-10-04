@@ -17,6 +17,13 @@ const REMINDER_HOUR = Number(process.env.REMINDER_HOUR ?? 17);
 const CATEGORIES = ['お知らせ', '申し送り', '在庫・発注', 'マニュアル'];
 const PRIORITIES = ['通常', '重要', '緊急'];
 const EVENT_TYPES = ['診療', '休診', '会議・研修', 'その他'];
+const LAB_STATUSES = ['依頼', '製作中', '外注中', '完成', 'セット済'];
+const LAB_TYPES = ['クラウン', 'ブリッジ', 'インレー・アンレー', 'ラミネートベニア', '部分床義歯', '総義歯', 'インプラント上部構造', 'マウスピース・スプリント', '矯正装置', 'その他'];
+const LOCATIONS = ['技工室', 'チェアサイド', 'その他'];
+const ITEM_CATEGORIES = ['消耗品', '薬剤', '印象材・石膏', '金属・セラミック', 'レジン・ワックス', '器具・バー', 'その他'];
+const JOBS = ['歯科医師', '歯科衛生士', '歯科技工士', '歯科助手', '受付', 'その他'];
+// 添付ファイルの親データ: ルート名 → 保存先コレクション
+const COLLECTIONS = { posts: 'posts', events: 'events', lab: 'labOrders' };
 
 // 拡張子 → 配信時のContent-Type（クライアント申告は信用しない）
 const FILE_TYPES = {
@@ -87,9 +94,9 @@ function sessionCookie(req, token, maxAge) {
   return `sid=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${maxAge}${secure ? '; Secure' : ''}`;
 }
 
-const publicUser = (u) => ({ id: u.id, name: u.name, role: u.role });
+const publicUser = (u) => ({ id: u.id, name: u.name, role: u.role, jobTitle: u.jobTitle || '' });
 const fullUser = (u) => ({
-  id: u.id, loginId: u.loginId, name: u.name, role: u.role,
+  id: u.id, loginId: u.loginId, name: u.name, role: u.role, jobTitle: u.jobTitle || '',
   email: u.email || '', notifyEmail: u.notifyEmail !== false,
 });
 
@@ -106,7 +113,7 @@ const eventLine = (e) =>
 
 // ---- 添付ファイル ----
 function findParent(kind, id) {
-  const p = db[kind].find((x) => x.id === id);
+  const p = db[COLLECTIONS[kind]].find((x) => x.id === id);
   return p || fail(404, '見つかりません');
 }
 function canModify(user, item) {
@@ -118,7 +125,7 @@ function removeFiles(item) {
 
 async function uploadFile(req, res, user, kind, id) {
   const item = findParent(kind, id);
-  if (!canModify(user, item)) fail(403, '権限がありません');
+  if (kind !== 'lab' && !canModify(user, item)) fail(403, '権限がありません'); // 技工物の添付は全スタッフ可
   item.files ??= [];
   if (item.files.length >= 10) fail(400, '添付は1件につき10ファイルまでです');
   const name = path.basename(decodeURIComponent(str(req.headers['x-filename'], 300)) || 'file').replace(/[\r\n"]/g, '_');
@@ -135,8 +142,8 @@ async function uploadFile(req, res, user, kind, id) {
 }
 
 function serveFile(res, fileId) {
-  for (const kind of ['posts', 'events']) {
-    for (const item of db[kind]) {
+  for (const coll of Object.values(COLLECTIONS)) {
+    for (const item of db[coll]) {
       const f = (item.files || []).find((x) => x.id === fileId);
       if (!f) continue;
       const ext = path.extname(f.name).toLowerCase();
@@ -154,11 +161,11 @@ function serveFile(res, fileId) {
 }
 
 function deleteFile(user, fileId) {
-  for (const kind of ['posts', 'events']) {
-    for (const item of db[kind]) {
+  for (const coll of Object.values(COLLECTIONS)) {
+    for (const item of db[coll]) {
       const i = (item.files || []).findIndex((x) => x.id === fileId);
       if (i < 0) continue;
-      if (!canModify(user, item)) fail(403, '権限がありません');
+      if (coll !== 'labOrders' && !canModify(user, item)) fail(403, '権限がありません');
       removeFiles({ files: [item.files[i]] });
       item.files.splice(i, 1);
       save();
@@ -169,6 +176,7 @@ function deleteFile(user, fileId) {
 }
 
 const postOut = (p) => ({ ...p, files: (p.files || []).map(({ id, name, size }) => ({ id, name, size })) });
+const labOut = (o) => ({ ...o, files: (o.files || []).map(({ id, name, size }) => ({ id, name, size })) });
 const eventOut = (e) => ({ ...e, files: (e.files || []).map(({ id, name, size }) => ({ id, name, size })) });
 
 // ---- イベント入力検証 ----
@@ -190,6 +198,54 @@ function parseEvent(b) {
     type: EVENT_TYPES.includes(b.type) ? b.type : 'その他',
     memo: str(b.memo, 2000),
   };
+}
+
+function parseLab(b) {
+  const patientRef = str(b.patientRef, 40);
+  if (!patientRef) fail(400, '患者番号（またはイニシャル）を入力してください');
+  if (!LAB_TYPES.includes(b.type)) fail(400, '技工物の種類を選んでください');
+  if (!isDate(b.dueDate)) fail(400, '納期を入力してください');
+  const requestDate = isDate(b.requestDate) ? b.requestDate : nowJst().toISOString().slice(0, 10);
+  if (b.dueDate < requestDate) fail(400, '納期は依頼日以降にしてください');
+  return {
+    patientRef, type: b.type, teeth: str(b.teeth, 60), material: str(b.material, 60), shade: str(b.shade, 30),
+    doctor: str(b.doctor, 40), lab: str(b.lab, 60),
+    assigneeId: db.users.some((u) => u.id === b.assigneeId) ? b.assigneeId : '',
+    requestDate, dueDate: b.dueDate, setDate: isDate(b.setDate) ? b.setDate : '',
+    urgent: !!b.urgent, memo: str(b.memo, 2000),
+  };
+}
+const qtyNum = (v, label) => {
+  const n = Number(v === '' || v == null ? 0 : v);
+  if (!Number.isFinite(n) || n < 0 || n > 1e6) fail(400, `${label}は0以上の数値で入力してください`);
+  return Math.round(n * 100) / 100;
+};
+function parseItem(b) {
+  const name = str(b.name, 60);
+  if (!name) fail(400, '品名を入力してください');
+  if (!LOCATIONS.includes(b.location)) fail(400, '置き場所を選んでください');
+  return {
+    name, location: b.location,
+    category: ITEM_CATEGORIES.includes(b.category) ? b.category : 'その他',
+    unit: str(b.unit, 10) || '個',
+    reorderPoint: qtyNum(b.reorderPoint, '発注点'), target: qtyNum(b.target, '適正在庫'),
+    supplier: str(b.supplier, 60), expiry: isDate(b.expiry) ? b.expiry : '', memo: str(b.memo, 500),
+  };
+}
+const today = () => nowJst().toISOString().slice(0, 10);
+const round2 = (n) => Math.round(n * 100) / 100;
+
+// 発注点を下回った時に1回だけ通知（補充されるまで再通知しない）
+function checkLowStock(item) {
+  const low = item.reorderPoint > 0 ? item.qty <= item.reorderPoint : item.qty <= 0;
+  if (!low) { item.lowNotified = false; return; }
+  if (item.lowNotified || item.orderedAt || process.env.INVENTORY_NOTIFY === '0') return;
+  item.lowNotified = true;
+  notifyBackground(`【在庫少】${item.name}`, `${item.location}: 残り${item.qty}${item.unit}（発注点 ${item.reorderPoint}${item.unit}）${item.supplier ? `\n仕入先: ${item.supplier}` : ''}`);
+}
+function logStock(item, user, type, delta, note) {
+  db.stockLogs.push({ id: uid(), itemId: item.id, itemName: item.name, location: item.location, type, delta, qty: item.qty, note, by: user.name, at: new Date().toISOString() });
+  if (db.stockLogs.length > 500) db.stockLogs.splice(0, db.stockLogs.length - 500);
 }
 
 // ---- API ----
@@ -240,6 +296,7 @@ async function handleApi(req, res, url) {
     return send(res, 200, {
       categories: CATEGORIES, priorities: PRIORITIES, eventTypes: EVENT_TYPES,
       channels: notify.cfg(),
+      labStatuses: LAB_STATUSES, labTypes: LAB_TYPES, locations: LOCATIONS, itemCategories: ITEM_CATEGORIES, jobs: JOBS,
     });
   }
 
@@ -254,6 +311,7 @@ async function handleApi(req, res, url) {
         user.email = email;
       }
       if (body.notifyEmail !== undefined) user.notifyEmail = !!body.notifyEmail;
+      if (body.jobTitle !== undefined) user.jobTitle = JOBS.includes(body.jobTitle) ? body.jobTitle : '';
       if (body.newPassword) {
         if (!auth.verifyPassword(String(body.currentPassword ?? ''), user.password)) fail(400, '現在のパスワードが違います');
         checkPassword(body.newPassword);
@@ -289,6 +347,7 @@ async function handleApi(req, res, url) {
         if (email && !isEmail(email)) fail(400, 'メールアドレスの形式が正しくありません');
         target.email = email;
       }
+      if (body.jobTitle !== undefined) target.jobTitle = JOBS.includes(body.jobTitle) ? body.jobTitle : '';
       if (body.role !== undefined && target.id !== user.id) target.role = body.role === 'admin' ? 'admin' : 'staff';
       if (body.password) {
         checkPassword(body.password);
@@ -382,6 +441,120 @@ async function handleApi(req, res, url) {
     if (c === 'files' && method === 'POST') return uploadFile(req, res, user, 'events', b);
   }
 
+  // --- 技工物 ---
+  if (a === 'lab') {
+    if (!b && method === 'GET') return send(res, 200, db.labOrders.map(labOut));
+    if (!b && method === 'POST') {
+      const body = await readJson(req);
+      db.meta.labSeq = (db.meta.labSeq || 0) + 1;
+      const o = {
+        id: uid(), no: `L-${String(db.meta.labSeq).padStart(4, '0')}`, ...parseLab(body), status: '依頼', remakeCount: 0,
+        authorId: user.id, author: user.name, createdAt: new Date().toISOString(), files: [],
+        history: [{ at: new Date().toISOString(), by: user.name, status: '依頼', note: '依頼を登録' }],
+      };
+      db.labOrders.unshift(o);
+      save();
+      if (body.notify) notifyBackground(`【技工物の依頼】${o.no} ${o.type}`, `患者: ${o.patientRef} / 依頼医: ${o.doctor || '—'}\n納期: ${fmtDate(o.dueDate)}${o.urgent ? '（急ぎ）' : ''}`);
+      return send(res, 201, labOut(o));
+    }
+    const o = findParent('lab', b);
+    if (!c && method === 'PUT') {
+      Object.assign(o, parseLab(await readJson(req)));
+      save();
+      return send(res, 200, labOut(o));
+    }
+    if (!c && method === 'DELETE') {
+      if (!canModify(user, o)) fail(403, '権限がありません（登録者または管理者のみ削除できます）');
+      removeFiles(o);
+      db.labOrders = db.labOrders.filter((x) => x !== o);
+      save();
+      return send(res, 200, { ok: true });
+    }
+    if (c === 'status' && method === 'POST') {
+      const body = await readJson(req);
+      if (!LAB_STATUSES.includes(body.status)) fail(400, '工程が正しくありません');
+      if (body.status === o.status) fail(400, 'すでにその工程です');
+      o.status = body.status;
+      o.history.push({ at: new Date().toISOString(), by: user.name, status: body.status, note: str(body.note, 200) });
+      save();
+      if (body.notify) notifyBackground(`【技工物 ${o.status}】${o.no} ${o.type}`, `患者: ${o.patientRef} / 依頼医: ${o.doctor || '—'}\n納期: ${fmtDate(o.dueDate)}${str(body.note, 200) ? `\n${str(body.note, 200)}` : ''}`);
+      return send(res, 200, labOut(o));
+    }
+    if (c === 'remake' && method === 'POST') {
+      const body = await readJson(req);
+      o.status = '製作中';
+      o.remakeCount = (o.remakeCount || 0) + 1;
+      o.history.push({ at: new Date().toISOString(), by: user.name, status: '製作中', note: `再製作（${o.remakeCount}回目）${str(body.note, 200) ? ': ' + str(body.note, 200) : ''}` });
+      save();
+      return send(res, 200, labOut(o));
+    }
+    if (c === 'files' && method === 'POST') return uploadFile(req, res, user, 'lab', b);
+  }
+
+  // --- 在庫（技工室・チェアサイド）---
+  if (a === 'inventory') {
+    if (!b && method === 'GET') return send(res, 200, { items: db.items, logs: db.stockLogs.slice(-300).reverse() });
+    if (!b && method === 'POST') {
+      const body = await readJson(req);
+      const item = { id: uid(), ...parseItem(body), qty: qtyNum(body.qty, '現在数'), orderedAt: '', lowNotified: false, createdAt: new Date().toISOString() };
+      db.items.push(item);
+      logStock(item, user, 'new', item.qty, '品目を登録');
+      checkLowStock(item);
+      save();
+      return send(res, 201, item);
+    }
+    if (b === 'bulk-ordered' && method === 'POST') {
+      const body = await readJson(req);
+      for (const id of Array.isArray(body.ids) ? body.ids : []) {
+        const it = db.items.find((x) => x.id === id);
+        if (it) it.orderedAt = today();
+      }
+      save();
+      return send(res, 200, { ok: true });
+    }
+    const item = db.items.find((x) => x.id === b) || fail(404, '品目が見つかりません');
+    if (!c && method === 'PUT') {
+      Object.assign(item, parseItem(await readJson(req)));
+      checkLowStock(item);
+      save();
+      return send(res, 200, item);
+    }
+    if (!c && method === 'DELETE') {
+      admin();
+      db.items = db.items.filter((x) => x !== item);
+      save();
+      return send(res, 200, { ok: true });
+    }
+    if (c === 'adjust' && method === 'POST') {
+      const body = await readJson(req);
+      const amount = qtyNum(body.amount, '数量');
+      const note = str(body.note, 100);
+      const before = item.qty;
+      if (body.type === 'use') {
+        if (amount <= 0) fail(400, '数量を入力してください');
+        if (amount > item.qty) fail(400, `在庫（${item.qty}${item.unit}）より多く使用できません`);
+        item.qty = round2(item.qty - amount);
+      } else if (body.type === 'in') {
+        if (amount <= 0) fail(400, '数量を入力してください');
+        item.qty = round2(item.qty + amount);
+        item.orderedAt = ''; // 入庫したら発注済みを解除
+      } else if (body.type === 'set') {
+        item.qty = amount; // 棚卸
+      } else fail(400, '操作が正しくありません');
+      logStock(item, user, body.type, round2(item.qty - before), note);
+      checkLowStock(item);
+      save();
+      return send(res, 200, item);
+    }
+    if (c === 'ordered' && method === 'POST') {
+      const body = await readJson(req);
+      item.orderedAt = body.ordered ? today() : '';
+      if (!body.ordered) item.lowNotified = false;
+      save();
+      return send(res, 200, item);
+    }
+  }
+
   // --- 添付ファイル ---
   if (a === 'files' && b) {
     if (method === 'GET') return serveFile(res, b);
@@ -412,7 +585,7 @@ function newUser(body, role) {
   if (db.users.some((u) => u.loginId === loginId)) fail(409, 'そのログインIDは既に使われています');
   const email = str(body.email, 100);
   if (email && !isEmail(email)) fail(400, 'メールアドレスの形式が正しくありません');
-  return { id: uid(), loginId, name, role, email, notifyEmail: true, password: auth.hashPassword(body.password), createdAt: new Date().toISOString() };
+  return { id: uid(), loginId, name, role, email, jobTitle: JOBS.includes(body.jobTitle) ? body.jobTitle : '', notifyEmail: true, password: auth.hashPassword(body.password), createdAt: new Date().toISOString() };
 }
 
 // ---- 前日リマインダー（明日の予定をまとめて通知）----
@@ -420,16 +593,22 @@ function reminderTick() {
   const c = notify.cfg();
   if (!c.line && !c.email) return;
   const now = nowJst();
-  const today = now.toISOString().slice(0, 10);
-  if (now.getUTCHours() < REMINDER_HOUR || db.meta.lastReminder === today) return;
-  db.meta.lastReminder = today;
+  const todayStr = now.toISOString().slice(0, 10);
+  if (now.getUTCHours() < REMINDER_HOUR || db.meta.lastReminder === todayStr) return;
+  db.meta.lastReminder = todayStr;
   save();
   const tomorrow = new Date(now.getTime() + 864e5).toISOString().slice(0, 10);
   const list = db.events
     .filter((e) => e.date <= tomorrow && e.endDate >= tomorrow)
     .sort((x, y) => (x.start || '').localeCompare(y.start || ''));
-  if (!list.length) return;
-  notifyBackground(`【明日の予定】${fmtDate(tomorrow)}`, list.map(eventLine).join('\n'));
+  if (list.length) notifyBackground(`【明日の予定】${fmtDate(tomorrow)}`, list.map(eventLine).join('\n'));
+  const due = db.labOrders.filter((o) => o.status !== 'セット済' && o.dueDate <= tomorrow);
+  if (due.length) {
+    notifyBackground('【技工物の納期】今日・明日・超過分', due.map((o) => `${o.no} ${o.type}（患者 ${o.patientRef}）納期 ${fmtDate(o.dueDate)} ${o.status}`).join('\n'));
+  }
+  const soon = new Date(now.getTime() + 14 * 864e5).toISOString().slice(0, 10);
+  const exp = db.items.filter((i) => i.expiry && i.expiry <= soon && i.qty > 0);
+  if (exp.length) notifyBackground('【在庫】使用期限が近い品目', exp.map((i) => `${i.name}（${i.location}）期限 ${i.expiry}`).join('\n'));
 }
 
 // ---- 静的ファイル ----
